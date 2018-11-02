@@ -32,7 +32,6 @@ class ApplicationController < Sinatra::Base
       session[:id] = @user.id
       binding.pry
       redirect '/users/home'
-
     else
       redirect '/sessions/login'
     end
